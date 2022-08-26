@@ -131,6 +131,14 @@ function onYouTubePlayerAPIReady() {
   });
 }
 
+//공지사항 상하슬라이드--------------
+new Swiper('.notice .notice-line .inner .swiper', {
+  direction: 'vertical',
+  autoplay: true,
+  loop: true,
+});
+
+
 //프로모션 슬라이드------------------
 new Swiper(".promotion .swiper", {
   direction: "horizontal",
@@ -188,6 +196,8 @@ new Swiper(".awards .swiper", {
     nextEl: ".awards .swiper-next", // 다음 버튼 선택자
   },
 });
+
+
 
 //footer 해마다 년도가 자동으로 변경
 const thisYear = document.querySelector('.this-year');

@@ -118,8 +118,8 @@ header nav ul.main-menu li.item .contents_texture p{color: #669900;margin: 4px 0
 .visual .title{position: absolute;top: 190px;left: -10px;}
 .visual .title .btn{position: absolute;top: 220px;left: 80px;}
 
-.visual .coffee1 .cup1.image{position: absolute;bottom: 90px;right: -70px;}
-.visual .coffee2 .cup2.image{position: absolute;bottom: 60px;right: 240px;}
+.visual .coffee1 .cup1.image{position: absolute;bottom: 90px;right: -80px;}
+.visual .coffee2 .cup2.image{position: absolute;bottom: 60px;right: 230px;}
 .visual .coffee3 .spoon{position: absolute;bottom: 100px;left:350px;}
 
 .visual .fade-in{opacity: 0;}
@@ -130,6 +130,8 @@ header nav ul.main-menu li.item .contents_texture p{color: #669900;margin: 4px 0
 .notice .notice-line .bg-right{position: absolute;top: 0;right: 0;width: 50%;height: 100%;background: #f6f5ef;}
 
 .notice .notice-line .inner{height: 62px;display: flex;}
+.notice .notice-line .notice-swiper{color:#ffff;}
+
 
 /* 왼쪽 */
 .notice .notice-line .inner .inner__left{width: 60%;height:100%;background: #333;display: flex;align-items: center;}
@@ -180,21 +182,21 @@ header nav ul.main-menu li.item .contents_texture p{color: #669900;margin: 4px 0
 
 /* REWARDS Area---------------------------------------- */
 .rewards{position: relative;background: #1e3932;}
-.rewards .bg-left{width: 200px;position: absolute;top: 30px;left: 200px;}
+.rewards .bg-left{width: 200px;position: absolute;top: 30px;left: 450px;}
 
-.rewards .bg-right{width: 50%;height: 100%;position: absolute;top: 40px;right: 300px;}
-.rewards .bg-right h1{color: #fff;position: absolute;top: 5px;font-size: 25px;}
-.rewards .bg-right p{color: #fff;position: absolute;top: 50px;}
-.rewards .bg-right hr{color: #fff; width:70%;position: absolute;top: 109px;}
-.rewards .bg-right span{color: #fff;position: absolute;top: 80px;margin-top: 40px;font-size: 13px;}
+.rewards .bg-right{width: 900px;height: 500px;position: absolute;top: 30px;right: 300px;}
+.rewards .bg-right h1{color: #fff;position: absolute;top: 5px;font-size: 25px;font-weight: bold;width: 900px;}
+.rewards .bg-right p{color: #fff;position: absolute;top: 50px;width: 900px;}
+.rewards .bg-right hr{color: #fff; width:520px;position: absolute;top: 109px;}
+.rewards .bg-right span{color: #fff;position: absolute;top: 80px;margin-top: 50px;font-size: 13px;width: 900px;}
 
 
 .rewards .inner{height: 241px; }
 
-.rewards .btn-group{position: absolute;right: 0;bottom: 40px;display: flex;flex-wrap: wrap;width: 250px;}
+.rewards .btn-group{position: absolute;right: 0;bottom: 60px;display: flex;flex-wrap: wrap;width: 250px;}
 .rewards .btn-group .join{margin-right: 10px;}
 .rewards .btn-group .sign-in{width: 110px;}
-.rewards .btn-group .gift{width:150px;margin-top: 30px;margin-left: 50px;}
+.rewards .btn-group .gift{width:330px;margin-top: 20px;margin-left: 5px;}
 
 /* 유투브 영상------------------------------------ */
 .youtube{position: relative;height: 700px;background: #333;overflow: hidden;}
@@ -221,26 +223,37 @@ header nav ul.main-menu li.item .contents_texture p{color: #669900;margin: 4px 0
 .season-product .text-group{position: absolute;top: 110px;right: 150px;}
 .season-product .text-group .title,
 .season-product .text-group .description{margin-bottom: 10px;}
+.season-product .text-group .btn{margin-top: 30px;}
 
 /* RESERVE COFFEE------------------------------------ */
-.reserve-coffee{background: url(../images/images/store_bg.jpg);}
+.reserve-coffee{background: url(../images/images/reserve_2022_indonesia_visual_bg.jpg);}
 .reserve-coffee .inner{height: 400px;}
-.reserve-coffee .inner .back-to-position.delay-2{position: absolute;left: 220px;top: 230px;}
+.reserve-coffee .inner .back-to-position.delay-2{position: absolute;left: 220px;top: 250px;}
 .reserve-coffee .inner > img{width: 40%;}
 .reserve-coffee .inner .reserv-logo{position: absolute;top: 110px;left: 0;}
 .reserve-coffee .inner .text-group{width: 100%;}
-.reserve-coffee .inner .text-group > img{width: 7000px;position: absolute;top: 92px;left: 300px;}
+.reserve-coffee .inner .text-group > img{position: absolute;top: 92px;left: 300px;}
 .reserve-coffee .inner .reserve-image{position: absolute;top: 0px;right: 0;}
-
-
+.reserve-coffee .inner .left-leaf{height: 900px;position: absolute;top: 127px; right: 600px;width: 950px;}
+.reserve-coffee .inner .right-leaf{position: absolute;left: 950px;height: 900px;top: 107px;width: 550px;z-index: 2;}
+.back-to-position {z-index: 1;}
+/* RESERVE  MAGAZINE */
+.reserve-magazine{
+  background: url(../images/images/reserve_bg_pc.png) no-repeat;
+  height: 380px;
+  background-size: contain;
+}
+.reserve-magazine .left-reserveimg{position: absolute;top: 120px;left: 80px;}
+.reserve-magazine .right-reserveimg{position: absolute;left:740px;height: 300px;}
+.reserve-magazine .btn{position: absolute;top: 240px;left: 450px;}
 
 /* PICK YOUR FAVORITE----------------------------------- */
 .pick-your-favorite{background: url(../images/images/fav_prod_bg_new.jpg) no-repeat center fixed;background-size: cover;}
 .pick-your-favorite .inner{padding: 100px 0;}
-.pick-your-favorite .text-group{width: 360px;margin-left: 100px;display: flex;flex-wrap: wrap;justify-content: flex-end;}
+.pick-your-favorite .text-group{width: 400px;margin-left: 60px;display: flex;flex-wrap: wrap;justify-content: flex-end;}
 .pick-your-favorite .text-group img:nth-child(1){margin-bottom: 20px;}
 .pick-your-favorite .description{display: flex;}
-.pick-your-favorite .pickbg{position: absolute; left: 600px; top: 100px;}
+.pick-your-favorite .pickbg{position: absolute; left: 500px; top: 100px;width: 80%;}
 .pick-your-favorite .btn{margin-top: 20px;}
 
 
